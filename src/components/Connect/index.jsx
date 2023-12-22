@@ -8,7 +8,7 @@ import "./../../index.css";
 import ReactApexChart from "react-apexcharts";
 
 const Connect = () => {
-  const chartData = {
+  const data = {
     series: [35, 30, 35],
 
     options: {
@@ -112,10 +112,10 @@ const Connect = () => {
           <div className={styles.chart2}>
             <div className={styles.ChartFlow2}>
               <ReactApexChart
-                options={chartData.options}
-                series={chartData.series}
+                options={data.options}
+                series={data.series}
                 type="donut"
-                width="179px"
+                width="175px"
                 height="200px"
               />
               <div className={styles.chartGroup}>

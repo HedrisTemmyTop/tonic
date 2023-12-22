@@ -2,17 +2,22 @@ import "./App.css";
 
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Home from "./pages/Home";
-
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { routes } from "./routes";
 function App() {
   return (
-    <main className="app">
-      <Header />
-      {/*
-       */}
-      <Home />
-      <Footer />
-    </main>
+    <BrowserRouter>
+      <main className="app">
+        <Header />
+        <Routes>
+          {routes.map((el) => (
+            <Route {...el} key={el.path} />
+          ))}
+        </Routes>
+
+        <Footer />
+      </main>
+    </BrowserRouter>
   );
 }
 
