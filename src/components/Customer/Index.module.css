@@ -1,0 +1,75 @@
+.customer {
+  margin: 0 auto;
+  padding-block: 15rem;
+}
+.customer img {
+  width: 100%;
+  object-fit: cover;
+}
+.main {
+  margin-top: 5.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.head {
+  line-height: 5.6rem;
+  font-size: 3.6rem;
+  color: #000;
+  max-width: 50rem;
+}
+.box {
+  width: 45rem;
+  flex-basis: 50%;
+  padding-bottom: 1.6rem;
+  border-bottom: 2px solid #c4c4c4;
+  display: flex;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.box:first-child {
+  margin-bottom: 3.2rem;
+}
+.boxText {
+  font-size: 2rem;
+}
+.icon {
+  font-size: 3rem;
+}
+@media only screen and (max-width: 1300px) {
+  .customer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .customer img {
+    max-width: 90%;
+    margin: auto;
+  }
+  .main {
+    max-width: 90%;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .head {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .main {
+    flex-direction: column;
+  }
+  .head {
+    margin-bottom: 4rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .box {
+    max-width: 100%;
+    width: 100%;
+  }
+}

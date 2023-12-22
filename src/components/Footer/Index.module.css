@@ -1,0 +1,205 @@
+.footer {
+  /* max-width: ; */
+}
+.container {
+  margin: auto;
+}
+.body {
+  width: 100%;
+  background-color: #0a2640;
+  border-radius: 1.2rem;
+  display: grid;
+  place-items: center;
+  padding: 7.2rem 24.2rem;
+  position: relative;
+}
+.text {
+  font-size: 4rem;
+  line-height: 7rem;
+  color: #fff;
+  text-align: center;
+}
+.form {
+  display: flex;
+  align-items: center;
+  margin-top: 5rem;
+  padding-inline: 3rem;
+}
+.input {
+  width: 37rem;
+  height: 6rem;
+  border-radius: 24rem;
+  background-color: #fff;
+  outline: none;
+  border: 0;
+  margin-right: 2.4rem;
+  padding: 1.2rem 3.2rem;
+  color: #000;
+}
+.input::placeholder {
+  font-size: 1.8rem;
+  color: #000;
+}
+
+.startbtn {
+  background-color: #65e4a3;
+  color: #0a2640;
+  width: 21rem;
+  height: 6rem;
+  border-radius: 5.6rem;
+  border: 0;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.footerContainer {
+  margin-top: 9rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Footerlist {
+  /* margin-left: 18rem;
+  display: flex;
+  gap: 9rem;
+  position: relative; */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-basis: 70%;
+  max-width: 60rem;
+}
+
+/* .Footerlist button {
+  position: absolute;
+  width: 7rem;
+  height: 3rem;
+  background: #65e4a3;
+  border-radius: 12rem;
+  top: 63%;
+  left: 51%;
+  border: none;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 28px;
+  color: #0a2640;
+} */
+
+.footerCon {
+  width: 1200px;
+  display: flex;
+  height: 270px;
+  margin: 100px;
+}
+
+.Logo {
+  display: flex;
+  flex-direction: column;
+  height: 270px;
+}
+
+.Logo p {
+  font-size: 16px;
+  line-height: 2.8rem;
+  color: #777777;
+  max-width: 30rem;
+  margin-top: 4rem;
+  width: 100%;
+}
+.Logo img {
+  width: 15.6rem;
+}
+.Logo span {
+  width: 15.6rem;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  color: #777777;
+  margin-top: 6.4rem;
+}
+
+.footListCon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.footerheader {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 32px;
+  color: #000000;
+}
+.listContainer ul {
+  margin-top: 3rem;
+  list-style: none;
+}
+.listContainer ul li:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 1250px) {
+  .body {
+    padding: 4.2rem 4.2rem;
+  }
+  .footerContainer {
+    padding-inline: 2rem;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .form {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .form input {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+    margin-right: 0;
+  }
+  .footerContainer {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .Logo {
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .Footerlist {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .Logo p,
+  .Logo span {
+    margin-top: 0;
+  }
+  .Logo P {
+    max-width: 20rem;
+  }
+  .Logo span {
+    position: absolute;
+    top: 100%;
+    left: 40%;
+    right: 50%;
+    transform: translateX(-50%, -50%);
+  }
+  .Logo img {
+    width: 10rem;
+  }
+  .text {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .body {
+    padding: 4rem 2rem;
+  }
+}

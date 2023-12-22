@@ -1,0 +1,165 @@
+.connect {
+  padding: 12rem 16rem;
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  gap: 15rem;
+}
+.imgContainer {
+  position: relative;
+}
+.chart {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  background-color: #fff;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  z-index: 2;
+  box-shadow: 0 0.4rem 3.2rem rgba(0, 0, 0, 0.12);
+  border-radius: 2rem;
+}
+.percent {
+  margin-block: 1rem;
+  font-weight: 600;
+  color: #0a2640;
+  font-size: 2rem;
+}
+.cap {
+  font-size: 1.2rem;
+  color: #0a2640;
+  font-weight: 400;
+}
+.content {
+  line-height: 5rem;
+  font-size: 3.6rem;
+  color: #000;
+  margin-bottom: 3rem;
+}
+.connectText {
+  display: flex;
+  align-items: center;
+}
+.connectText:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.check {
+  margin-right: 1rem;
+  width: 3.6rem;
+  height: 3.6rem;
+}
+.startBtn {
+  width: 21rem;
+  height: 6rem;
+  margin-top: 3rem;
+  color: #fff;
+  background-color: #0a2640;
+  border: 0;
+  border-radius: 5.6rem;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+.mainContent {
+  padding-block: 15rem 18rem;
+}
+.left {
+  max-width: 50rem;
+}
+.box {
+  background-color: #fff;
+  display: flex;
+  box-shadow: 0 0.4rem 3.2rem rgba(0, 0, 0, 0.08);
+  color: #000;
+  transition: all 0.2s;
+  padding: 1.6rem 2.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+.box:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.box span {
+  margin-left: 2rem;
+  font-weight: 600;
+}
+.box:hover {
+  background-color: #0a2640;
+  color: #fff;
+}
+.chart2 {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  background-color: #fff;
+  position: absolute;
+  top: 55%;
+  left: 10%;
+  z-index: 2;
+  box-shadow: 0 0.4rem 3.2rem rgba(0, 0, 0, 0.12);
+  border-radius: 2rem;
+}
+.percent2 {
+  color: #000000;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+.percent2:not(:last-child) {
+  margin-bottom: 1.2rem;
+}
+.chartGroup {
+  margin-top: 2rem;
+}
+@media only screen and (max-width: 1300px) {
+  .connect {
+    padding: 10rem 4rem;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .main {
+    gap: 4rem;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .content {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .imgContainer {
+    flex-basis: 95%;
+  }
+  .imgContainer img {
+    width: 100%;
+  }
+  .chart {
+    padding: 2rem;
+  }
+  .chart img {
+    height: 10rem;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .main {
+    flex-direction: column;
+  }
+  .main div:nth-child(2) {
+    max-width: 100%;
+  }
+
+  .chart2 {
+    padding: 2rem;
+  }
+}

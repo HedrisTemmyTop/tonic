@@ -1,0 +1,109 @@
+.services {
+  background-color: #0a2640;
+  max-width: 100%;
+  padding: 8.5rem 15rem;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+.body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container header {
+  max-width: 84.2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 7rem;
+}
+.cap {
+  color: #f1f1f1;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.title {
+  line-height: 7rem;
+  font-size: 4.8rem;
+  text-align: center;
+  margin-top: 2rem;
+  color: #fff;
+}
+.boxes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 110rem;
+  margin: 0 auto;
+}
+.box {
+  color: #fff;
+}
+.box img {
+  margin-bottom: 2rem;
+}
+
+.box button {
+  display: flex;
+  margin-top: 3rem;
+  color: inherit;
+  align-items: center;
+  font-size: 1.6rem;
+  background: transparent;
+  border: 0;
+  font-weight: 600;
+  border-bottom: 1px solid white;
+  padding-bottom: 1rem;
+}
+.box button span {
+  margin-right: 1rem;
+}
+.main {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1250px) {
+  .services {
+    padding: 6.5rem 4rem;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .box {
+    flex-basis: 30%;
+  }
+  .box img {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .boxes {
+    flex-direction: column;
+  }
+  .box {
+    flex-basis: 100%;
+    width: 100%;
+    max-width: 30rem;
+  }
+  .box:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+  .box button {
+    margin-top: 1.5rem;
+  }
+  .title {
+    font-size: 3.8rem;
+    line-height: 5rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .title {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+}
